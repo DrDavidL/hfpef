@@ -28,10 +28,12 @@ def calculate_log_odds_and_probability(age, bmi, af_history, htn_drug, diabetes,
 st.title("HFpEF Risk Calculator")
 
 # Add disclaimer in an expander
-with st.expander("Disclaimer"):
+with st.expander("Read the Disclaimer"):
     st.write("""
     **Educational Use Only**
-    This calculator is intended for educational purposes only and should not be used as a substitute for professional medical advice, diagnosis, or treatment. All results should be validated clinically by a qualified healthcare provider.
+    This calculator is intended for educational purposes only and should not be used as a substitute for professional medical advice, diagnosis, or treatment. All results should be validated clinically by a qualified healthcare provider. \n\n
+    *Reddy, Y.N.V., Carter, R.E., Sundaram, V. et al. An evidence-based screening tool for heart failure with preserved ejection fraction: the HFpEF-ABA score. Nat Med (2024). https://doi.org/10.1038/s41591-024-03140-1*
+    
     """)
 
 age = st.number_input("Age (years)", min_value=0, max_value=120, value=60)
