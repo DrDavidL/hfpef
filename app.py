@@ -40,7 +40,7 @@ bmi = st.number_input("BMI (kg/m²)", min_value=10.0, max_value=50.0, value=25.0
 afib = st.checkbox("Atrial Fibrillation History (AF)")
 af_history = 1 if afib else 0
 
-htn = st.checkbox("> 1 Hypertension Medication")
+htn = st.checkbox("More than 1 Hypertension Medication")
 htn_drug = 1 if htn else 0
 
 dm = st.checkbox("Diabetes")
